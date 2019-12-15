@@ -93,6 +93,7 @@
   position: relative;
   z-index: 1; }
   .section_text::after {
+    color: white;
     content: '';
     position: absolute;
     background-color: #ff4e33;
@@ -233,5 +234,3 @@ footer {
     position: absolute;
     margin-top: -50px;
     margin-left: 1100px; }
-
-/*# sourceMappingURL=style2.css.map */
