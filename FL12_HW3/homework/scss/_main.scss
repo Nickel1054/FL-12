@@ -1,6 +1,6 @@
 @mixin button_make{
     margin-top: 50px;
-    background-color: $button-back;
+    background-color: map-get($colors, button-back);
     font-size: 20px;
     font-family: 'Hind', sans-serif;
     color: white;
@@ -30,16 +30,15 @@
     background-position: top -220px left 0px;
     height: 600px;
     &::after{
-        @include word_select($bg-col);
-        //background-color: $bg-col;
+        @include word_select(map-get($colors, bg-col));
         opacity: 1;
         width: 100%;
-        height: 100%;
+        height: 110%;
         top: 0px;
         z-index: -1;
         //top: 0px;
     }
-    color: $text-col;
+    color: map-get($colors, text-col);
     .landing-logo{
         margin-top: 10px;
         display: flex;
@@ -83,7 +82,7 @@
         z-index: 1;
 
         &::after{
-            @include word_select($word-back);
+            @include word_select(map-get($colors, word-back));
             top: 60px;
             left: 0px;
             height: 50px;
@@ -112,11 +111,11 @@
 }
 
 .section{
-    background-color: $bg-col;
+    background-color: map-get($colors, bg-col);
 }
 
 .section_text{
-    color: $text-col;
+    color: map-get($colors, text-col);
     font-family: 'Hind', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -125,7 +124,8 @@
     position: relative;
     z-index: 1;
     &::after{
-        @include word_select($word-back);
+    color: map-get($colors, text-col);
+        @include word_select(map-get($colors, word-back));
         top: 3px;
         left: 677px;
         height: 40px;
@@ -136,8 +136,8 @@
 .section_card_wrap .section_card{
     display: flex;
     flex-direction: column;
-    background-color: $cont-col;
-    border: 10px solid $cont-col;
+    background-color: map-get($colors, cont-col);
+    border: 10px solid map-get($colors, cont-col);
     border-radius: 10px;
     width: 60%;
     margin: auto;
@@ -183,7 +183,7 @@
 .section_banner{
     content: '';
     position: relative;
-    background: linear-gradient(to right, $grad1, $grad2);
+    background: linear-gradient(to right, map-get($colors, grad1), map-get($colors, grad2));
     margin: auto;
     margin-top: 100px;
     width: 70%;
@@ -195,7 +195,7 @@
         font-family: 'Hind', sans-serif;
         font-size: 30px;
         font-weight: bolder;
-        color: $text-col;
+        color: map-get($colors, text-col);
         margin-top: 20px;
         margin-left: 120px;
     }
@@ -207,7 +207,7 @@
         font-size: 16px;
         font-weight: normal;
         &::after{
-            @include word_select($word-back);
+            @include word_select(map-get($colors, word-back));
             top: -55px;
             left: 125px;
             height: 35px;

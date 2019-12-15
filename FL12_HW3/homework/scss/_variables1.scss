@@ -1,12 +1,14 @@
-$header-image: '../img/m-h-day.jpg';
-$word-back: #14a0c7;
-$button-back: #699900;
-$bg-col: white;
-$cont-col: #21232e;
-$text-col: #2c2f3c;
-$grad1: #66960a;
-$grad2: #2d5bd8;
+$colors: (
+    word-back: #14a0c7,
+    button-back: #699900,
+    bg-col: white,
+    cont-col: #21232e,
+    text-col: #2c2f3c,
+    grad1: #66960a,
+    grad2: #2d5bd8,
+);
 $font: 'Hind';
 $mar-l: 150px;
 $mar2: -10px;
 $mar3: -70px;
+$header-image: '../img/m-h-day.jpg';
