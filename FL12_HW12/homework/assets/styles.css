@@ -1,0 +1,10 @@
+#blocks{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.set{
+    background-color: blue;
+    height: 20px;
+    margin-bottom: 5px;
+}
